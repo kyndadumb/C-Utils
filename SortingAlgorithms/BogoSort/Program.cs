@@ -4,13 +4,23 @@ using System;
 namespace BogoSort;
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
         // Create sample Data
-        DataHelper.GenerateInput();
+        //DataHelper.GenerateInput();
 
         // Read sample Data
-        List<int> numbers = DataHelper.ReadInput(".\\input.txt");
+        //List<int> numbers = DataHelper.ReadInput(".\\input.txt");
+
+        List<int> numbers = new List<int>();
+
+        Random rand = new Random();
+
+        for (int i = 0; i < 1; i++)
+        {
+            numbers.Add(rand.Next(1000));
+        }
+
 
         Console.WriteLine("BogoSort is sorting");
 
